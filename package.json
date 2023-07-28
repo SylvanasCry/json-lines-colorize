@@ -1,0 +1,33 @@
+{
+  "name": "@sylvanas-cry/json-lines-colorize",
+  "version": "1.0.1",
+  "description": "Colorizes the JSON-strings input stream (stdin).",
+  "author": {
+    "name": "Sylvanas Cry",
+    "email": "ae2@gmx.us"
+  },
+  "keywords": [
+    "json",
+    "json-lines",
+    "colorize",
+    "pretty"
+  ],
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "bin": {
+    "jlc": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo ok",
+    "build": "tsc",
+    "install:dev": "npm run build && npm pack && npm i -g ./sylvanas-json-lines-colorize-1.0.0.tgz",
+    "remove:dev": "npm remove -g @sylvanas/json-lines-colorize"
+  },
+  "dependencies": {
+    "json-colorizer": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^5.1.6"
+  }
+}
