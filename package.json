@@ -24,7 +24,7 @@
   "scripts": {
     "test": "echo ok",
     "build": "tsc",
-    "install:dev": "npm run build && npm pack && npm i -g ./sylvanas-cry-json-lines-colorize-1.1.0.tgz",
+    "install:dev": "npm run build && npm pack && npm i -g ./sylvanas-cry-json-lines-colorize-1.1.1.tgz",
     "remove:dev": "npm remove -g @sylvanas-cry/json-lines-colorize"
   },
   "dependencies": {
