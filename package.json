@@ -4,7 +4,7 @@
   "description": "Colorizes the JSON-strings input stream (stdin).",
   "author": {
     "name": "Sylvanas Cry",
-    "email": "ae2@gmx.us"
+    "email": "sylvanas@gmx.us"
   },
   "keywords": [
     "json",
@@ -24,10 +24,12 @@
     "remove:dev": "npm remove -g @sylvanas/json-lines-colorize"
   },
   "dependencies": {
+    "commander": "^11.0.0",
     "json-colorizer": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
 }
