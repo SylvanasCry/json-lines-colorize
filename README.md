@@ -18,17 +18,15 @@ npm install -g @sylvanas-cry/json-lines-colorize
 ```
 
 Where options is:
-  - `-o, --override <property>,<value>,<hex-color>` - replaces property name and string literal
-    colors with given `hex-color` if object has `property` with `value` 
+  - `-c, --comma` — add comma to the end of every JSON object
+  - `-n, --no-pretty` — disable pretty-print of JSON objects
+  - `-o, --override <property>,<value>,<hex-color>` — replaces property name and string literal
+    colors with given `hex-color` if JSON object has `property` with `value` 
 
-## Example
+## Examples
 
 ```shell
 echo '{"foo":"bar"}' | jlc
-```
-
-```shell
-kubectl logs -n my-namespace --follow my-pod | jlc
 ```
 
 ```shell
@@ -38,4 +36,12 @@ jlc -o level,error,ff0000
 
 ```shell
 echo '{"a":"b"}\n{"c":"d"}' | jlc -o a,b,ff0000 -o c,d,\#00FF00
+```
+
+```shell
+tail -f /var/log/my-service.log | jlc -n -c
+```
+
+```shell
+kubectl logs -n my-namespace --follow my-pod | jlc
 ```
