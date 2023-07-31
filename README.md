@@ -45,3 +45,7 @@ tail -f /var/log/my-service.log | jlc -n -c
 ```shell
 kubectl logs -n my-namespace --follow my-pod | jlc
 ```
+
+## License
+
+The scripts and documentation in this project are released under the [MIT License](./LICENSE).

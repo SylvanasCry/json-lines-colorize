@@ -1,6 +1,6 @@
 {
   "name": "@sylvanas-cry/json-lines-colorize",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Colorizes the JSON-strings input stream (stdin).",
   "repository": {
     "url": "git@github.com:SylvanasCry/json-lines-colorize.git"
@@ -16,7 +16,7 @@
     "colorize",
     "pretty"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "./dist/jlc.js",
   "bin": {
     "jlc": "./dist/jlc.js"
